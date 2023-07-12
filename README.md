@@ -47,7 +47,7 @@ The dataset used for this project is sourced from the Health Facts database, a n
 
 By applying these criteria, approximately 100,000 records have been identified for further analysis.
 
-The dataset comprises 55 features, including gender, weight, encounter ID, and readmission status. It can be utilized for classification and clustering tasks. In this project, the goal is to predict whether a patient will be readmitted within 30 days or not, which falls under a classification task.
+The dataset comprises 55 features, including gender, weight, encounter ID, and readmission status. It can be utilized for classification and clustering tasks. The project goal is to predict whether a patient will be readmitted after treatment or not, which falls under a classification task.
 
 **Feature Description:**
 
