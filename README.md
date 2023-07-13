@@ -116,128 +116,31 @@ Please refer to the the notebook for detailed information on the dataset and its
 
 
 ## **Modells used.**
-#### <span style='color:cyan'>**1. Dummy Model**</span>
-A Dummy Model is a basic and simple model used as a benchmark for comparison with more complex models. It makes predictions based on simple rules or random guessing, without considering any relationships or patterns in the data. While it may not provide accurate predictions, it helps in understanding the minimum performance level that a model should exceed.
+#### <span style='color:cyan'>**1. Baseline model**</span>
+A baseline model refers to a simple or basic model that serves as a starting point for comparison in machine learning or data analysis tasks. It is often the simplest model that can be built without any complex algorithms or feature engineering.
 
-
-#### <span style='color:cyan'>**2.Random Forest**</span>
-Random Forest is a machine learning algorithm that combines multiple decision trees to create a powerful predictive model. Each decision tree is constructed by randomly selecting features and splitting the data based on those features. The final prediction is made by aggregating the predictions of all the individual trees. Random Forest is known for its ability to handle complex relationships, handle high-dimensional data, and provide feature importance rankings.
-
-
-#### <span style='color:orange'>**3.Decision tree**</span>
-A Decision Tree is a simple yet effective machine learning algorithm that represents a series of decisions or classifications based on features of the data. It partitions the data into subsets based on the selected features and creates a tree-like structure to make predictions. Each internal node of the tree represents a decision based on a feature, and each leaf node represents a class label or an outcome. Decision Trees are easy to understand and interpret, making them suitable for tasks where interpretability is important.
+The purpose of a baseline model is to establish a benchmark or reference point against which the performance of more advanced or sophisticated models can be measured. It provides a point of comparison to assess whether the additional complexity and effort put into developing more advanced models yield significant improvements in performance.
 
 
 
+#### <span style='color:cyan'>**2. Logistic regression: Imbalannced data**</span>
+Logistic Regression with imbalanced data refers to using the same algorithm but without addressing the class imbalance issue. In this case, the model may face challenges in accurately predicting the minority class because it has fewer instances to learn from. The model's performance may be skewed towards the majority class, resulting in low recall (ability to identify positive instances) for the minority class.
+
+Each of these models has its strengths and weaknesses, and the choice of which model to use depends on the specific problem and dataset at hand. It's important to evaluate and compare the performance of different models to select the most suitable one for the task.
 
 
 
-## Evaluation
-The  <span style='color:orange'>**Dummy Model**</span> evaluation results are as follows:
-
-Accuracy: 0.882
-The confusion matrix shows that all predictions are in the majority class (0), and none are in the minority class (1).
-The model has a precision, recall, and F1-score of 0 for the minority class (1), indicating it does not correctly predict this class.
-Overall, the model achieved an accuracy of 0.882 but had poor performance in predicting the minority class.
-
-The <span style='color:orange'>**Decision tree**</span> model evaluations are as follows:
-
-Training Score: 0.938
-Test Score: 0.934
-The model performed well on both the training and test data, achieving high scores. It accurately predicted the majority class (0) and the minority class (1) with good precision, recall, and F1-score. The overall accuracy of the model is 93%, demonstrating its ability to make correct predictions.
-
-The evaluations for <span style='color:orange'>**Random Forest**</span> model are as follows:
-
-Training Score: 0.999
-Test Score: 0.936
-The model achieved extremely high scores on both the training and test data, indicating its excellent performance. It accurately predicted the majority class (0) and the minority class (1) with high precision, recall, and F1-score. The overall accuracy of the model is 94%, demonstrating its ability to make accurate predictions.
+#### <span style='color:orange'>**3. Logistic Regression: Balanced Data**</span>
+Logistic Regression is a statistical model used for binary classification problems, where the goal is to predict one of two possible outcomes. It calculates the probability of an instance belonging to a particular class and makes a prediction based on that probability. Logistic Regression with balanced data refers to the use of a technique to address class imbalance, where the number of instances in one class is significantly higher than the other. By balancing the data, Logistic Regression can give equal importance to both classes and provide more accurate predictions.
 
 
+#### <span style='color:orange'>**4. Random Forest**</span> 
+Random Forest is a machine learning algorithm that combines multiple decision trees to make predictions. Think of it as a group of experts coming together to make a decision. Each decision tree in the Random Forest makes its prediction, and then the final prediction is determined by taking a majority vote among all the trees. This approach helps to reduce overfitting and improve the accuracy of the predictions. Random Forest is known for its ability to handle complex data and provide reliable results.
+ #### <span style='color:orange'>**5. Decision Tree**</span>
 
-## Results
-**Dummy Model:**
-- Accuracy: 0.882
-- Confusion matrix: All predictions are in the majority class (0), and none are in the minority class (1).
-- Precision, recall, and F1-score: 0 for the minority class (1), indicating poor performance in predicting this class.
-- Overall, the model achieved an accuracy of 0.882 but had poor performance in predicting the minority class.
-
-**Decision Tree Model:**
-- Training Score: 0.938
-- Test Score: 0.934
-- The model performed well on both the training and test data, achieving high scores.
-- It accurately predicted the majority class (0) and the minority class (1) with good precision, recall, and F1-score.
-- The overall accuracy of the model is 93%, demonstrating its ability to make correct predictions.
-
-**Random Forest Model:**
-- Training Score: 0.999
-- Test Score: 0.936
-- The model achieved extremely high scores on both the training and test data, indicating excellent performance.
-- It accurately predicted the majority class (0) and the minority class (1) with high precision, recall, and F1-score.
-- The overall accuracy of the model is 94%, demonstrating its ability to make accurate predictions.
-
-
-
-
-## Dependencies
-- Python 3.7 or above
-- Jupyter Notebook
-- Pandas
-- Numpy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Imbalanced-learn
-- XGBoost
-- LightGBM
-
-
-## Usage
-1. Clone the repository
-2. Install the dependencies
-3. Use github [codespaces](https://github.com/HersiYussuf/Capstone_Project)
-4. Using the code green button used getting http links for cloning.Create a codespace. 
-5. Open the codespace and run the notebook in your favourite editor.
-
-
-## Contributing
-
-
-We welcome contributions from the community to improve and enhance our project. If you are interested in contributing, please follow the guidelines below:
-
-1. **Fork** the [repository](https://github.com/HersiYussuf/Capstone_Project.git) by clicking on the "Fork" button.
-2. Clone the forked repository to your local machine using the following command:
-3. Create a new branch for your feature or bug fix:
-
-### **or**
-
-4. Make your desired changes to the codebase, ensuring they adhere to the project's coding guidelines and best practices.
-5. Write appropriate **tests** to cover your changes and ensure that the existing test suite passes successfully.
-6. Commit your changes with a clear and descriptive commit message:
-7. Push your branch to your forked repository:
-8. Submit a **Pull Request (PR)** to the main repository by visiting the [Pull Requests](https://github.com/HersiYussuf/Capstone_Project/pulls) page of the original repository. Outline the changes you have made and provide any relevant information.
-9. Engage in discussions with the project maintainers and address any feedback or changes requested.
-10. Once approved, your changes will be merged into the main repository.
-11. Congratulations! You have successfully contributed to the project.
-
-Please note that by contributing to this project, you agree to abide by the project's [Code of Conduct](https://docs.github.com/en/site-policy/github-terms/github-event-code-of-conduct). Be respectful and considerate when interacting with the community.
-
-If you have any questions or need further assistance, please reach out to us through [contact information or preferred communication channels].
-
-We appreciate your contributions and look forward to your involvement in making this project better!
-
-
-
-
-
-
-
-## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). By contributing to this project, you agree to the terms and conditions of this license.
-
-For more information, please refer to the [LICENSE](https://github.com/HersiYussuf/Capstone_Project/blob/main/LICENSE) file.
-
-# Model Performance Evaluation
+A Decision Tree is a simple yet powerful algorithm that mimics the way humans make decisions. It starts with a single node called the root, which represents the entire dataset. The tree then splits the data based on different features, creating branches and sub-branches. Each branch represents a decision or outcome, leading to a final prediction or result at the leaf nodes. Decision Trees are easy to interpret and understand, making them useful for explaining the reasoning behind predictions.
+ #### <span style='color:orange'>**6. XGBoost**</span> 
+XGBoost stands for Extreme Gradient Boosting, and it is an advanced machine learning algorithm that is widely used for classification and regression tasks. XGBoost is similar to Random Forest in that it combines multiple models, but it has a different approach. It creates a series of decision trees, where each subsequent tree tries to correct the mistakes made by the previous trees. This iterative process continues until the model reaches an optimal state. XGBoost is known for its speed, scalability, and high performance in various machine learning competitions.# Model Performance Evaluation
 
 The model performance evaluation included several algorithms such as Logistic Regression, Random Forest, Decision Tree, and XGBoost. The baseline model had poor performance, with low accuracy and recall. Logistic Regression on imbalanced data also performed poorly, indicating the impact of class imbalance. However, Logistic Regression on balanced data showed an improvement in recall but still fell short of expectations. Random Forest achieved the highest success metric with perfect recall for the positive class and high accuracy. Decision Tree had high accuracy but slightly lower recall. XGBoost performed well, with high recall and accuracy.
 
@@ -338,6 +241,70 @@ To further improve the model performance and address the challenges faced, the f
 
 
 
+
+
+
+
+
+
+## Dependencies
+- Python 3.7 or above
+- Jupyter Notebook
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-learn
+- XGBoost
+- LightGBM
+
+
+## Usage
+1. Clone the repository
+2. Install the dependencies
+3. Use github [codespaces](https://github.com/HersiYussuf/Capstone_Project)
+4. Using the code green button used getting http links for cloning.Create a codespace. 
+5. Open the codespace and run the notebook in your favourite editor.
+
+
+## Contributing
+
+
+We welcome contributions from the community to improve and enhance our project. If you are interested in contributing, please follow the guidelines below:
+
+1. **Fork** the [repository](https://github.com/HersiYussuf/Capstone_Project.git) by clicking on the "Fork" button.
+2. Clone the forked repository to your local machine using the following command:
+3. Create a new branch for your feature or bug fix:
+
+### **or**
+
+4. Make your desired changes to the codebase, ensuring they adhere to the project's coding guidelines and best practices.
+5. Write appropriate **tests** to cover your changes and ensure that the existing test suite passes successfully.
+6. Commit your changes with a clear and descriptive commit message:
+7. Push your branch to your forked repository:
+8. Submit a **Pull Request (PR)** to the main repository by visiting the [Pull Requests](https://github.com/HersiYussuf/Capstone_Project/pulls) page of the original repository. Outline the changes you have made and provide any relevant information.
+9. Engage in discussions with the project maintainers and address any feedback or changes requested.
+10. Once approved, your changes will be merged into the main repository.
+11. Congratulations! You have successfully contributed to the project.
+
+Please note that by contributing to this project, you agree to abide by the project's [Code of Conduct](https://docs.github.com/en/site-policy/github-terms/github-event-code-of-conduct). Be respectful and considerate when interacting with the community.
+
+If you have any questions or need further assistance, please reach out to us through [contact information or preferred communication channels].
+
+We appreciate your contributions and look forward to your involvement in making this project better!
+
+
+
+
+
+
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). By contributing to this project, you agree to the terms and conditions of this license.
+
+For more information, please refer to the [LICENSE](https://github.com/HersiYussuf/Capstone_Project/blob/main/LICENSE) file.
 ## Contributors
 
 - [Aaron Onserio](https://github.com/AaronOnserio)
