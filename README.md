@@ -156,15 +156,47 @@ The model achieved extremely high scores on both the training and test data, ind
 
 
 ## Results
+**Dummy Model:**
+- Accuracy: 0.882
+- Confusion matrix: All predictions are in the majority class (0), and none are in the minority class (1).
+- Precision, recall, and F1-score: 0 for the minority class (1), indicating poor performance in predicting this class.
+- Overall, the model achieved an accuracy of 0.882 but had poor performance in predicting the minority class.
+
+**Decision Tree Model:**
+- Training Score: 0.938
+- Test Score: 0.934
+- The model performed well on both the training and test data, achieving high scores.
+- It accurately predicted the majority class (0) and the minority class (1) with good precision, recall, and F1-score.
+- The overall accuracy of the model is 93%, demonstrating its ability to make correct predictions.
+
+**Random Forest Model:**
+- Training Score: 0.999
+- Test Score: 0.936
+- The model achieved extremely high scores on both the training and test data, indicating excellent performance.
+- It accurately predicted the majority class (0) and the minority class (1) with high precision, recall, and F1-score.
+- The overall accuracy of the model is 94%, demonstrating its ability to make accurate predictions.
+
 
 
 
 ## Dependencies
-
+- Python 3.7 or above
+- Jupyter Notebook
+- Pandas
+- Numpy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Imbalanced-learn
+- XGBoost
+- LightGBM
 
 
 ## Usage
-
+1. Clone the repository
+2. Install the dependencies
+3. Use github [codespaces](https://github.com/HersiYussuf/Capstone_Project)
+4. Using the code green button,create a codespace.
 
 ## Contributing
 
@@ -197,17 +229,53 @@ We appreciate your contributions and look forward to your involvement in making 
 
 
 
-## License
+
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). By contributing to this project, you agree to the terms and conditions of this license.
 
 For more information, please refer to the [LICENSE](https://github.com/HersiYussuf/Capstone_Project/blob/main/LICENSE) file.
 
+# Model Evaluation Summary
+
+## Summary
+
+The Dummy model showed poor performance, while the Decision Tree and Random Forest models demonstrated better results.
+
+The Decision Tree model achieved high scores on both training and test data, with good precision, recall, and F1-score.
+
+The Random Forest model achieved even higher scores on both training and test data, with excellent precision, recall, and F1-score.
+
+## Conclusions
+
+* The Random Forest model outperformed the other models, achieving the highest accuracy and demonstrating robust performance.
+* The Decision Tree model also performed well, but slightly lower compared to the Random Forest model.
+* The Dummy model should be disregarded due to its poor performance.
+
+## Recommendations
+
+* It is recommended to use the Random Forest model for predicting the target variable, as it achieved the best performance.
+* The Decision Tree model can be considered as an alternative, although it had slightly lower performance.
+
+## Challenges
+
+* The evaluation metrics provide insights into the models' performance, but further validation and testing in real-world scenarios are necessary.
+* The models' performance may vary depending on the specific dataset and task at hand.
+
+## Next Steps
+
+* Further analyze and understand the features and data used for training the models.
+* Conduct additional experiments with different algorithms or techniques to compare and improve the model's performance.
+* Evaluate the models on larger and more diverse datasets to ensure their generalization capabilities.
+* Fine-tune the models by optimizing hyperparameters to potentially enhance their performance.
+
+## In Summary
+
+The Random Forest model is recommended for predicting the target variable due to its excellent performance. However, further analysis, validation, and optimization are necessary to ensure its effectiveness in real-world scenarios. The Decision Tree model can serve as an alternative but may require additional refinement. Future steps involve further experimentation and evaluation to improve the models' performance and enhance their generalization capabilities.
 
 
 
-## Authors
+## Contributors
 
 - [Aaron Onserio](https://github.com/AaronOnserio)
 - [Daniel Ekale](https://github.com/D-EKALE)
@@ -217,6 +285,5 @@ For more information, please refer to the [LICENSE](https://github.com/HersiYuss
 - [Jimcollins Wamae](https://github.com/)
 - [Edna Wanjiku](https://github.com/Edna722)
 
-## Contact
 
 
