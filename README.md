@@ -118,13 +118,13 @@ The dataset comprises 55 features, including gender, weight, encounter ID, and r
 
 ## Authors
 
-- Daniel Ekale
-- Edna Wanjiku
-- Robert Mbugua
-- Yussuf Hersi
-- Aaron Onserio
-- Jimcollins Wamae
-- Emily Njue
+- [Aaron Onserio](https://github.com/AaronOnserio)
+- [Daniel Ekale](https://github.com/D-EKALE)
+- [Emily Njue](https://github.com/EmillyN22)
+- [Robert Mbau](https://github.com/robertmbau)
+- [Yussuf Hersi](https://github.com/HersiYussuf)
+- [Jimcollins Wamae](https://github.com/)
+- [Edna Wanjiku](https://github.com/Edna722)
 
 ## Contact
 
