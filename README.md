@@ -237,42 +237,104 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 For more information, please refer to the [LICENSE](https://github.com/HersiYussuf/Capstone_Project/blob/main/LICENSE) file.
 
-# Model Evaluation Summary
+# Model Performance Evaluation
 
-## Summary
+The model performance evaluation included several algorithms such as Logistic Regression, Random Forest, Decision Tree, and XGBoost. The baseline model had poor performance, with low accuracy and recall. Logistic Regression on imbalanced data also performed poorly, indicating the impact of class imbalance. However, Logistic Regression on balanced data showed an improvement in recall but still fell short of expectations. Random Forest achieved the highest success metric with perfect recall for the positive class and high accuracy. Decision Tree had high accuracy but slightly lower recall. XGBoost performed well, with high recall and accuracy.
 
-The Dummy model showed poor performance, while the Decision Tree and Random Forest models demonstrated better results.
+## Model Results
 
-The Decision Tree model achieved high scores on both training and test data, with good precision, recall, and F1-score.
+### Baseline Model
 
-The Random Forest model achieved even higher scores on both training and test data, with excellent precision, recall, and F1-score.
+- Accuracy: 8.882
+- Precision: 0.88
+- Recall: 0.00
+- F1-score: 1.00
+- Support: 21102
+
+### Logistic Regression: Imbalanced Data
+
+- Recall: 0.0046
+- Precision: 0.2281
+- F1-score: 0.0091
+- Accuracy: 0.8812
+
+### Logistic Regression: Balanced Data
+
+- Recall: 0.05
+- Precision: 0.61
+- F1-score: 0.59
+- Accuracy: 0.61
+
+### Random Forest
+
+- Precision: 0.89
+- Recall: 1.00
+- F1-score: 0.94
+- Accuracy: 0.94
+
+### Decision Tree
+
+- Precision: 0.88
+- Recall: 0.86
+- F1-score: 0.88
+- Accuracy: 0.86
+
+### XGBoost
+
+- Precision: 0.89
+- Recall: 0.93
+- F1-score: 0.93
+- Accuracy: 0.93
 
 ## Conclusions
 
-* The Random Forest model outperformed the other models, achieving the highest accuracy and demonstrating robust performance.
-* The Decision Tree model also performed well, but slightly lower compared to the Random Forest model.
-* The Dummy model should be disregarded due to its poor performance.
+Based on the evaluation results, the following conclusions can be drawn:
+
+- The baseline model performed poorly, with an accuracy of 8.882 and low recall for the positive class.
+- Logistic Regression with imbalanced data had very low recall and precision.
+- Logistic Regression with balanced data improved the recall to 0.05 but is still not satisfactory.
+- Random Forest achieved the highest success metric with a recall of 1.00 and an accuracy of 0.94.
+- Decision Tree had high accuracy but slightly lower recall compared to other models.
+- XGBoost performed well with a recall of 0.93 and high accuracy.
 
 ## Recommendations
 
-* It is recommended to use the Random Forest model for predicting the target variable, as it achieved the best performance.
-* The Decision Tree model can be considered as an alternative, although it had slightly lower performance.
+Based on the evaluation, the following recommendations can be made:
+
+- Random Forest and XGBoost are recommended models due to their higher recall and accuracy compared to other models.
+- Consider further optimizing the models to improve the recall for the positive class.
+- Explore additional techniques to handle class imbalance, such as oversampling or undersampling.
+- Gather more data, if possible, to increase the representation of the positive class and reduce class imbalance.
+- Conduct feature engineering to identify more informative features that can enhance the model's predictive power.
+- Explore ensemble methods to combine the strengths of multiple models and improve overall performance.
+- Consider using a different evaluation metric, such as the F1-score, to evaluate the models.
 
 ## Challenges
 
-* The evaluation metrics provide insights into the models' performance, but further validation and testing in real-world scenarios are necessary.
-* The models' performance may vary depending on the specific dataset and task at hand.
+The main challenges faced during the evaluation process include:
+- Finding the right balance between model performance and computational efficiency.
+- Dealing with class imbalance, where the majority class dominated the training data.
+- Achieving a satisfactory recall for the positive class.
+- Identifying the most informative features to improve the model's predictive power.
+- Determining the best model to use for the classification task.
+- Optimizing the model to achieve the best performance.
+- Determining the best evaluation metric to use for the classification task.
+- 
 
 ## Next Steps
 
-* Further analyze and understand the features and data used for training the models.
-* Conduct additional experiments with different algorithms or techniques to compare and improve the model's performance.
-* Evaluate the models on larger and more diverse datasets to ensure their generalization capabilities.
-* Fine-tune the models by optimizing hyperparameters to potentially enhance their performance.
+To further improve the model performance and address the challenges faced, the following next steps are suggested:
 
-## In Summary
+- Conduct feature engineering to identify more informative features that can enhance the model's predictive power.
+- Explore ensemble methods to combine the strengths of multiple models and improve overall performance.
+- Gather more data, if possible, to increase the representation of the positive class and reduce class imbalance.
+- Explore additional techniques to handle class imbalance, such as oversampling or undersampling.
+- Optimize the models to improve the recall for the positive class.
+- Explore additional evaluation metrics to determine the best model for the classification task.
+- Deploy the model to a production environment to make predictions on new data.
 
-The Random Forest model is recommended for predicting the target variable due to its excellent performance. However, further analysis, validation, and optimization are necessary to ensure its effectiveness in real-world scenarios. The Decision Tree model can serve as an alternative but may require additional refinement. Future steps involve further experimentation and evaluation to improve the models' performance and enhance their generalization capabilities.
+
+
 
 
 
