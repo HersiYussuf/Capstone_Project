@@ -148,7 +148,7 @@ The model performance evaluation included several algorithms such as Logistic Re
 
 ### Baseline Model
 
-- Accuracy: 8.882
+- Accuracy: 0.8882
 - Precision: 0.88
 - Recall: 0.00
 - F1-score: 1.00
@@ -170,7 +170,7 @@ The model performance evaluation included several algorithms such as Logistic Re
 
 ### Random Forest
 
-- Precision: 0.89
+- Precision: 0.94
 - Recall: 1.00
 - F1-score: 0.94
 - Accuracy: 0.94
