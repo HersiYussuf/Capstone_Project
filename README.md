@@ -33,7 +33,6 @@ The business problem we aim to address is the high rate of readmissions among pa
 
 
 ## **Data Overview**
-## **Data Overview**
 
 The dataset used for this project is sourced from the Health Facts database, a national data warehouse maintained by Cerner Corporation in Kansas City, MO. This database collects comprehensive clinical records from hospitals across the United States.
 
@@ -196,7 +195,9 @@ The model achieved extremely high scores on both the training and test data, ind
 1. Clone the repository
 2. Install the dependencies
 3. Use github [codespaces](https://github.com/HersiYussuf/Capstone_Project)
-4. Using the code green button,create a codespace.
+4. Using the code green button used getting http links for cloning.Create a codespace. 
+5. Open the codespace and run the notebook in your favourite editor.
+
 
 ## Contributing
 
