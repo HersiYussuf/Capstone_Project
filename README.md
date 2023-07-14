@@ -1,4 +1,4 @@
-![Alt text](output.png)
+![Alt text](images/output.png)
 # <span style="color:blue">HEALTHCARE DATA ANALYSIS: PREDICTING HOSPITAL READMISSION RATES.</SPAN>
 
 ## Project Description
@@ -255,9 +255,8 @@ To further improve the model performance and address the challenges faced, the f
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- Imbalanced-learn
+- Imblearn
 - XGBoost
-- LightGBM
 
 
 ## Usage
